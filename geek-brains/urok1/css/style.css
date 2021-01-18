@@ -1,0 +1,14 @@
+body {
+    background: #000;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+}
+
+.text {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
