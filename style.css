@@ -3,3 +3,7 @@
 	text-decoration: none;
 	color: rgb(7, 81, 243);
 }
+
+.link:hover {
+	color: rgb(3, 60, 184);
+}
