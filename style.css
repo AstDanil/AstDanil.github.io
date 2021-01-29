@@ -5,9 +5,9 @@ body {
 .link {
 	font-weight: bold;
 	text-decoration: none;
-	color: rgb(7, 81, 243);
+	color: rgb(21, 66, 163);
 }
 
 .link:hover {
-	color: rgb(3, 60, 184);
+	color: rgb(3, 42, 126);
 }
