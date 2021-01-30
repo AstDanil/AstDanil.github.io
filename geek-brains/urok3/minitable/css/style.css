@@ -1,0 +1,29 @@
+table {
+	width: 20em;
+	height: 10em;
+	margin: auto;
+	border-spacing: 0;
+	border:1px #000 solid;
+	font-size: 30px;
+}
+
+td {
+	padding: 5px;
+	border:1px #000 solid;
+}
+
+td:hover {
+	color: #fff;
+	background-color: #000;
+	transition: all 0.5s;
+}
+
+th {
+	border:1px #000 solid;
+}
+
+th:hover {
+	color: #fff;
+	background-color: #000;
+	transition: all 0.5s;
+}

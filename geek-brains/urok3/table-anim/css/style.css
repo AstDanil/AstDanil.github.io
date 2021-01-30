@@ -1,0 +1,48 @@
+body {
+	background: rgb(127, 203, 206);
+}
+
+table {
+	text-align: center;
+	background: #9b9b9b;
+	border: #9b9b9b solid 10px;
+	margin: auto;
+	font-size: 20px;
+}
+
+.iskl {
+	background: none;
+}
+
+.iskl:hover {
+	background: none;
+}
+
+.iskl2 {
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #bbbbbb;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+td:hover a{
+	color: #ffffff;
+}
+
+td:hover {
+	background: #000000;
+}
+
+td {
+	background: #272727;
+}
+
+img {
+	width: 250px;
+}
