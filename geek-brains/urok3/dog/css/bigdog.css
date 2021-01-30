@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+	background: rgb(117, 191, 194);
+}
+
+img {
+	margin-bottom: 10px;
+}
+
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	font-size: 25px;
+}
+
+.link:hover {
+	color: rgb(16, 5, 173);
+}
