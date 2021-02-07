@@ -1,0 +1,40 @@
+body {
+  background: #7fcbce;
+}
+
+table {
+  text-align: center;
+  background: #9b9b9b;
+  border: #9b9b9b solid 10px;
+  margin: auto;
+  font-size: 20px;
+}
+
+td {
+  background: #272727;
+}
+td:hover {
+  background: #000000;
+}
+td:hover a {
+  color: #ffffff;
+}
+
+img {
+  width: 250px;
+}
+
+.iskl {
+  background: none;
+}
+.iskl:hover {
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: #bbbbbb;
+}
+a:hover {
+  color: #ffffff;
+}
