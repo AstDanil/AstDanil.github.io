@@ -17,7 +17,7 @@ td:hover {
   background: #000000;
 }
 td:hover a {
-  color: #ffffff;
+  color: #fff;
 }
 
 img {
@@ -36,5 +36,5 @@ a {
   color: #bbbbbb;
 }
 a:hover {
-  color: #ffffff;
+  color: #fff;
 }

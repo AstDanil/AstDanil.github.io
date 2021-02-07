@@ -1,0 +1,44 @@
+body {
+	text-align: center;
+	background: rgb(73, 119, 121);
+	display: flex;
+}
+p {
+	margin-bottom: 0;
+}
+div {
+	background: #9b9b9b;
+	margin: auto;
+	padding: 20px;
+}
+h1 {
+	font-size: 35px;
+}
+img {
+	margin-bottom: 10px;
+	max-width: 250px;
+}
+a {
+	text-decoration: none;
+}
+
+.link {
+	font-weight: bold;
+	color: #000;
+	font-size: 20px;
+	&:hover {
+		color: rgb(16, 5, 173);
+	}
+}
+
+.download {
+	color: #bbb;
+	background: #272727;
+	margin: 15px auto;
+	padding: 5px 0;
+	width: 200px;
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
