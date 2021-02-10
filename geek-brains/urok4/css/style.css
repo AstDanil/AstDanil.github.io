@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*----------------Обнуление----------------*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*-----------------------------------------*/
+body {
+  background: #7fcbce;
+  margin: 8px;
+}
+
+table {
+  text-align: center;
+  background: #9b9b9b;
+  border: #9b9b9b solid 10px;
+  margin: auto;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.75);
+}
+a:hover {
+  opacity: 1;
+}
+
+.link {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+}
+.link:hover {
+  background: black;
+}
+.link:hover a {
+  color: white;
+}
+.link-download {
+  padding: 0 20px 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.link-download__iner {
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+}
+.link-download__iner:hover {
+  background: black;
+}
+.link-download__iner:hover a {
+  color: white;
+}
+
+.img {
+  padding: 0 0 15px;
+  width: 250px;
+  background: none;
+}
+.img:hover {
+  background: none;
+}
+
+.card__title {
+  font-size: 25px;
+  padding: 0 0 5px;
+}
+
+.back {
+  opacity: 1;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+.back:hover {
+  opacity: 1;
+  color: #1005ad;
+}
