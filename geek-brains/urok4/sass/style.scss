@@ -1,6 +1,5 @@
 @import "nullcss";
 
-$bgcolor-all: rgb(127, 203, 206);
 $bgcolor-table: #9b9b9b;
 
 $size-title: 25px;
@@ -17,7 +16,9 @@ $color-button__text: rgba(255, 255, 255, $opacity-button);
 $color-button__text_hover: rgba(255, 255, 255, $opacity-button__hover);
 
 body {
-	background: $bgcolor-all;
+	background: url(../img/fon.jpg) no-repeat;
+	background-size: 140%;
+	background-position: top;
 	margin: 8px;
 }
 
