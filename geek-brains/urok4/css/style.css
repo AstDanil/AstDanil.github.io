@@ -60,7 +60,9 @@ input, button, textarea, select {
 }
 /*-----------------------------------------*/
 body {
-  background: #7fcbce;
+  background: url(../img/fon.jpg) no-repeat;
+  background-size: 140%;
+  background-position: top;
   margin: 8px;
 }
 
