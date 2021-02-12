@@ -1,0 +1,9 @@
+ul {
+	font-size: 50px;
+	li {
+		list-style-type: square;
+	}
+	li > ul > li {
+		list-style-type: circle;
+	}
+}
