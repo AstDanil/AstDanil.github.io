@@ -61,8 +61,8 @@ input, button, textarea, select {
 /*-----------------------------------------*/
 body {
   background: url(../img/fon.jpg) no-repeat;
-  background-size: 140%;
-  background-position: top;
+  background-size: 170%;
+  background-position: 43% 0%;
   margin: 8px;
 }
 
