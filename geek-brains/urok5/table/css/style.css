@@ -9,38 +9,38 @@ table {
   margin: 0 auto;
   text-align: center;
 }
-table tr:first-child div {
+
+tr:first-child div {
   background: #66f732;
   border: 2px solid #ff0000;
   padding: 10px 5px;
   margin: 0 -10px;
 }
-table tr:nth-child(2) a {
+tr:nth-child(2) a {
   padding: 5px;
   border: 2px dotted #ff6600;
   background: #eb9f3d;
 }
-table tr:nth-child(5) a {
+tr:nth-child(5) a {
   padding: 5px;
   border: 2px dotted #a00078;
   background: #ff02c0;
 }
-table tr:nth-child(3) div {
+tr:nth-child(3) div {
   background: #afaeae;
   border: 1px dotted #784234;
   padding: 5px;
 }
-table tr:nth-child(6) div {
+tr:nth-child(6) div {
   background: #afaeae;
   border: 1px dotted #784234;
   padding: 5px;
 }
-table tr:nth-child(4) td:nth-child(1):hover img {
+tr:nth-child(4) td:first-child:hover img {
   outline: 3px solid #ff0000;
 }
-
-img {
-  max-width: 250px;
+tr:nth-child(7) td:first-child:hover img {
+  outline: 3px solid #ff0000;
 }
 
 a {
@@ -52,6 +52,9 @@ a:hover {
   color: #0000ff;
 }
 
+img {
+  max-width: 250px;
+}
 img:hover {
   outline: 3px solid #255b12;
 }
