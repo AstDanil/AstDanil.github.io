@@ -65,6 +65,11 @@ body {
   background-position: 43% 0%;
   margin: 8px;
 }
+@media (max-width: 870px) {
+  body {
+    background-size: cover;
+  }
+}
 
 table {
   text-align: center;
