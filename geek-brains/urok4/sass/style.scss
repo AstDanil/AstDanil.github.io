@@ -20,6 +20,9 @@ body {
 	background-size: 170%;
 	background-position: 43% 0%;
 	margin: 8px;
+	@media (max-width: 870px) {
+		& {background-size: cover;}
+	}
 }
 
 table {
