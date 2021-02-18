@@ -39,6 +39,7 @@ img {
 
 img:hover {
     outline: 4px solid green;
+    cursor: pointer;
 }
 
 /*
