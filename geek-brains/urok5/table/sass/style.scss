@@ -26,21 +26,14 @@ tr {
 		border: 2px dotted #a00078;
 		background: #ff02c0;
 	}
-	&:nth-child(3) div {
+	&:nth-child(3),
+	&:nth-child(6)
+	div {
 		background: #afaeae;
 		border: 1px dotted rgb(120, 66, 52);
 		padding: 5px;
 	}
-	&:nth-child(6) div {
-		background: #afaeae;
-		border: 1px dotted rgb(120, 66, 52);
-		padding: 5px;
-	}
-	&:nth-child(4) td:first-child {
-		&:hover img {
-			outline: 3px solid #ff0000;
-		}
-	}
+	&:nth-child(4) td:first-child,
 	&:nth-child(7) td:first-child {
 		&:hover img {
 			outline: 3px solid #ff0000;
@@ -61,5 +54,6 @@ img {
 	max-width: 250px;
 	&:hover {
 		outline: 3px solid #255b12;
+		cursor: pointer;
 	}
 }

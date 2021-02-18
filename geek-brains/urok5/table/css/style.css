@@ -26,20 +26,13 @@ tr:nth-child(5) a {
   border: 2px dotted #a00078;
   background: #ff02c0;
 }
-tr:nth-child(3) div {
+tr:nth-child(3), tr:nth-child(6)
+div {
   background: #afaeae;
   border: 1px dotted #784234;
   padding: 5px;
 }
-tr:nth-child(6) div {
-  background: #afaeae;
-  border: 1px dotted #784234;
-  padding: 5px;
-}
-tr:nth-child(4) td:first-child:hover img {
-  outline: 3px solid #ff0000;
-}
-tr:nth-child(7) td:first-child:hover img {
+tr:nth-child(4) td:first-child:hover img, tr:nth-child(7) td:first-child:hover img {
   outline: 3px solid #ff0000;
 }
 
@@ -57,4 +50,5 @@ img {
 }
 img:hover {
   outline: 3px solid #255b12;
+  cursor: pointer;
 }
