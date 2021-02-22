@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #707070;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: #ff0000;
+  margin-bottom: 10px;
+}
+
+.green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.green__item {
+  background: #015f01;
+  min-height: 150px;
+}
+.green__item--left {
+  width: 25%;
+  margin-right: 10px;
+}
+.green__item--right {
+  width: 75%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.left {
+  width: 20%;
+  background: #0e018a;
+  min-height: 500px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.left__item {
+  min-height: 45px;
+  background: #01584d;
+  margin-bottom: 10px;
+}
+.left__item:last-child {
+  margin: 0;
+}
+
+.right {
+  width: 15%;
+  background: #00009c;
+  min-height: 500px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.right__item {
+  min-height: 35px;
+  margin-bottom: 8px;
+  background: #00ff00;
+}
+.right__item:last-child {
+  margin: 0;
+}
+
+.center {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ping {
+  width: 100%;
+  min-height: 350px;
+  background: #f565f5;
+  margin-bottom: 10px;
+}
+
+.red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.red__item {
+  background: #ff0000;
+}
+.red__item--left {
+  width: 33.3333%;
+  min-height: 150px;
+  margin-right: 10px;
+}
+.red__item--center {
+  width: 33.3333%;
+  background: none;
+}
+.red__item--right {
+  width: 33.3333%;
+  min-height: 150px;
+  margin-left: 10px;
+}
+.red__item--min {
+  width: 100%;
+  min-height: 75px;
+  margin-bottom: 10px;
+}
+.red__item--min:last-child {
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #3b3b3b;
+}
