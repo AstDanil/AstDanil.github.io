@@ -93,6 +93,38 @@ header .text2 {
   margin-top: 5px;
 }
 
+@media (max-width: 1260px) {
+  header {
+    width: 45%;
+  }
+}
+@media (max-width: 925px) {
+  header {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 778px) {
+  header {
+    font-size: 20px;
+  }
+}
+@media (max-width: 634px) {
+  header {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 485px) {
+  header {
+    font-size: 10px;
+  }
+}
+@media (max-width: 338px) {
+  header {
+    font-size: 7px;
+  }
+}
 .planets {
   width: 100%;
   display: -webkit-box;
@@ -130,4 +162,53 @@ header .text2 {
 }
 .planets__name:hover {
   color: #1c0197;
+}
+
+@media (max-width: 1309px) {
+  .planets__card {
+    width: 49.2%;
+  }
+  .planets__card:nth-child(2n) {
+    margin-right: 0;
+  }
+  .planets__card:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .planets__name {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1268px) {
+  .planets__card {
+    width: 49%;
+  }
+}
+@media (max-width: 1018px) {
+  .planets__card {
+    width: 48.7%;
+  }
+  .planets__name {
+    font-size: 25px;
+  }
+}
+@media (max-width: 789px) {
+  .planets__card {
+    width: 48.3%;
+  }
+}
+@media (max-width: 608px) {
+  .planets__card, .planets__card:nth-child(3n) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 379px) {
+  .planets__name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 789px) {
+  .planets__name {
+    font-size: 15px;
+  }
 }
