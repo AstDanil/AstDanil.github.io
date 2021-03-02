@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>У друзей</title>
+</head>
+
+<body>
+
+	<svg style="display: none">
+		<symbol id="facebook" viewBox="0 0 512 512">
+			<g>
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0" />
+			</g>
+		</symbol>
+		<symbol id="instagram" viewBox="0 0 512 512">
+			<g>
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="m301 256c0 24.851562-20.148438 45-45 45s-45-20.148438-45-45 20.148438-45 45-45 45 20.148438 45 45zm0 0" />
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="m332 120h-152c-33.085938 0-60 26.914062-60 60v152c0 33.085938 26.914062 60 60 60h152c33.085938 0 60-26.914062 60-60v-152c0-33.085938-26.914062-60-60-60zm-76 211c-41.355469 0-75-33.644531-75-75s33.644531-75 75-75 75 33.644531 75 75-33.644531 75-75 75zm86-146c-8.285156 0-15-6.714844-15-15s6.714844-15 15-15 15 6.714844 15 15-6.714844 15-15 15zm0 0" />
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="m377 0h-242c-74.4375 0-135 60.5625-135 135v242c0 74.4375 60.5625 135 135 135h242c74.4375 0 135-60.5625 135-135v-242c0-74.4375-60.5625-135-135-135zm45 332c0 49.625-40.375 90-90 90h-152c-49.625 0-90-40.375-90-90v-152c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
+			</g>
+		</symbol>
+		<symbol id="vk" viewBox="0 0 14.171 14.171">
+			<g>
+				<path
+					d="M13.268,0H0.905C0.405,0,0,0.405,0,0.904v12.363c0,0.499,0.405,0.904,0.905,0.904h12.362   c0.499,0,0.904-0.405,0.904-0.904V0.904C14.172,0.404,13.767,0,13.268,0z M11.755,8.635c0.259,0.264,0.821,0.707,0.719,1.158   c-0.094,0.414-0.712,0.263-1.312,0.287c-0.685,0.029-1.091,0.044-1.503-0.287C9.465,9.636,9.351,9.45,9.165,9.242   C8.996,9.054,8.783,8.717,8.493,8.73C7.972,8.756,8.135,9.482,7.95,9.977c-2.896,0.456-4.059-1.333-5.085-3.069   C2.368,6.067,1.65,4.261,1.65,4.261l2.048-0.007c0,0,0.657,1.195,0.831,1.503c0.148,0.262,0.311,0.47,0.479,0.704   c0.141,0.194,0.364,0.574,0.608,0.543c0.397-0.051,0.469-1.591,0.223-2.107C5.741,4.688,5.506,4.615,5.263,4.544   C5.345,4.026,7.56,3.918,7.918,4.32c0.52,0.584-0.36,2.21,0.352,2.684c1-0.524,1.854-2.718,1.854-2.718l2.398,0.015   c0,0-0.375,1.186-0.768,1.712c-0.229,0.308-0.989,0.994-0.959,1.503C10.819,7.919,11.437,8.311,11.755,8.635z" />
+			</g>
+		</symbol>
+		<symbol id="youtube" viewBox="0 0 461.001 461.001">
+			<g>
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728  c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137  C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607  c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+			</g>
+		</symbol>
+	</svg>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__iner">
+				<div class="header__logo">Удрузей</div>
+				<nav class="nav">
+					<div class="nav__item"><a href="#">друзья</a></div>
+					<div class="nav__item"><a href="#">группы</a></div>
+					<div class="nav__item"><a href="#">игры</a></div>
+					<div class="nav__item"><a href="#">помощь</a></div>
+					<div class="nav__item"><a href="#">выход</a></div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<main>
+			<div class="sitebar">
+				<div class="menu">
+					<div class="menu__item"><a href="#">Моя страница</a></div>
+					<div class="menu__item"><a href="#">Мои друзья</a></div>
+					<div class="menu__item"><a href="#">Мои фотографии</a></div>
+					<div class="menu__item"><a href="#">Мои сообщения</a></div>
+					<div class="menu__item"><a href="#">Мои группы</a></div>
+					<div class="menu__item"><a href="#">Мои заметки</a></div>
+					<div class="menu__item"><a href="#">Мои настройки</a></div>
+				</div>
+				<div class="ad">
+					<div class="ad__item">
+						<img src="img/ad1.jpg" alt="">
+					</div>
+					<div class="ad__item">
+						<img src="img/ad2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">Avatar</div>
+				<div class="main">
+					<div class="content__left">
+						<div class="avatar">
+							<img src="img/avatar.jpg" alt="">
+						</div>
+						<button>Редактировать страницу</button>
+						<hr>
+						<div class="friends">
+							<div class="friends__title title">Друзья</div>
+							<img src="img/frends.jpg" alt="">
+						</div>
+					</div>
+					<div class="content__right">
+						<div class="name">Avatar</div>
+						<table class="data">
+							<tr>
+								<th>День рождения:</th>
+								<td>30.09.1975</td>
+							</tr>
+							<tr>
+								<th>Родной город:</th>
+								<td>Северск</td>
+							</tr>
+							<tr>
+								<th>Семейное положение:</th>
+								<td>Женат</td>
+							</tr>
+							<tr>
+								<th>Место работы:</th>
+								<td>ТУСУР</td>
+							</tr>
+							<tr>
+								<th>О себе:</th>
+								<td>Хорошо живет на свете пух...</td>
+							</tr>
+						</table>
+						<div class="photo">
+							<div class="photo__title title">Фотографии</div>
+							<div class="photo__flexbox">
+								<img class="photo__item" src="img/gallery1.jpg" alt="">
+								<img class="photo__item" src="img/gallery2.jpg" alt="">
+								<img class="photo__item" src="img/gallery3.jpg" alt="">
+								<img class="photo__item" src="img/gallery3.jpg" alt="">
+								<img class="photo__item" src="img/gallery3.jpg" alt="">
+							</div>
+						</div>
+						<div class="publication">
+							<div class="publication__title title">Записи</div>
+							<article class="publication__item">
+								<div class="publication__name">Оформление стены</div>
+								<div class="publication__img">
+									<img src="img/stena1.jpg" alt="">
+								</div>
+							</article>
+							<article class="publication__item">
+								<div class="publication__name">Оформление стены</div>
+								<div class="publication__img">
+									<img src="img/stena2.jpg" alt="">
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__iner">
+			<a href="http://facebook.com" class="footer__item" target="_blank">
+				<svg class="footer__icon">
+					<use xlink:href="#facebook"></use>
+				</svg>
+			</a>
+			<a href="http://instagram.com" class="footer__item" target="_blank">
+				<svg class="footer__icon">
+					<use xlink:href="#instagram"></use>
+				</svg>
+			</a>
+			<a href="http://vk.com" class="footer__item" target="_blank">
+				<svg class="footer__icon">
+					<use xlink:href="#vk"></use>
+				</svg>
+			</a>
+			<a href="http://youtube.com" class="footer__item" target="_blank">
+				<svg class="footer__icon">
+					<use xlink:href="#youtube"></use>
+				</svg>
+			</a>
+		</div>
+	</footer>
+</body>
+
+</html>
