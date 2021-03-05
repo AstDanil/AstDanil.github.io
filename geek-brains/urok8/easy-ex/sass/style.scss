@@ -1,0 +1,25 @@
+.flexbox {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 4px solid #008b00;
+	padding: 20px;
+	display: flex;
+	align-items: flex-end;
+	&__item {
+		border: 4px solid #f00;
+		width: 33.333%;
+		margin-right: 15px;
+		&1 {
+			height: 300px;
+		}
+		&2 {
+			height: 200px;
+		}
+		&3 {
+			height: 100px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
