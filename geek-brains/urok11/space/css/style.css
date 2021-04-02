@@ -109,6 +109,12 @@ header .text2 {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.planets__iner:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 .planets__img {
   margin-bottom: 10px;
@@ -124,6 +130,8 @@ header .text2 {
   border-radius: 10px;
   font-size: 25px;
   color: #3944df;
+  -webkit-transition: all .15s linear;
+  transition: all .15s linear;
 }
 .planets__name:hover {
   background: #535353;
