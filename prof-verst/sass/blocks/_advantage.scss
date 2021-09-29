@@ -1,0 +1,30 @@
+.advantage {
+	background: #222224;
+
+	&__iner {
+		display: flex;
+		padding: 100px 0;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 360px;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__text {
+		text-align: center;
+		color: #fbfbfb;
+	}
+	&__name {
+		font-size: 20px;
+		margin: 28px 0 16px 0;
+	}
+	&__description {
+		@include fs-fw(14px, 300);
+		opacity: 0.6;
+		line-height: 1.2em;
+	}
+}

@@ -1,0 +1,40 @@
+.nav {
+	background: #f8f3f4;
+	padding: 60px 0;
+
+	&__iner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-transform: uppercase;
+	}
+	&__title {
+		@include fs-fw(24px);
+		color: $mainColor;
+	}
+	&__crumbs {
+		display: flex;
+		color: #636363;
+	}
+	&__item {
+		@include fs-fw(14px, 300);
+		
+		&:hover {
+			color: darken(#636363, 50%);
+		}
+	}
+	&__item--active {
+		@include fs-fw(14px, 700);
+		color: $mainColor;
+
+		&:hover {
+			color: darken($mainColor, 10%);
+		}
+	}
+	&__link {
+		transition: all linear .1s;
+	}
+	&__span {
+		margin: 0 5px;
+	}
+}

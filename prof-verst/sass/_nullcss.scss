@@ -9,7 +9,7 @@ a:not([class]){text-decoration-skip-ink: auto;}
 a{text-decoration: none;cursor: pointer;font: inherit;display: block;color: inherit;}
 img{max-width: 100%;display: block;}
 input,button,textarea,select {font: inherit;color: inherit;}
-button {background: none;border: none;
+button {background: none;border: none;padding: 0;margin: 0;
 &:hover {cursor: pointer;}
 &:active {border: none;}}
 @media (prefers-reduced-motion: reduce) {* {animation-duration: 0.01ms !important;animation-iteration-count: 1 !important;transition-duration: 0.01ms !important;scroll-behavior: auto !important;}}
