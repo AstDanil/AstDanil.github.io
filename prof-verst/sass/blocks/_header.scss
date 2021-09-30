@@ -1,0 +1,52 @@
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	background: #222;
+
+	&__iner {
+		display: flex;
+		justify-content: space-between;
+		padding: 18px 0;
+	}
+	&__left,
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		position: relative;
+		margin-left: 35px;
+		display: flex;
+		align-items: center;
+
+		svg {
+			fill: #e8e8e8;
+			transition: all linear 0.2s;
+		}
+		&:hover {
+			svg {
+				fill: #fff;
+			}
+			svg,
+			span {
+				transform: scale(1.15);
+			}
+		}
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 20px;
+			height: 20px;
+			position: absolute;
+			right: -8px;
+			top: -8px;
+			background: $mainColor;
+			border-radius: 50%;
+			color: #fff;
+			transition: all linear 0.2s;
+		}
+	}
+}

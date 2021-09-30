@@ -51,6 +51,8 @@ input, button, textarea, select {
 button {
   background: none;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 button:hover {
   cursor: pointer;
@@ -73,7 +75,7 @@ button:active {
 /*-----------------------------------------*/
 body {
   font-family: "Lato", sans-serif;
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin-top: 75px;
 }
 
@@ -254,11 +256,56 @@ body {
 .category__text--big:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  color: #eb4057;
+  color: #ed3e56;
 }
 
 .catalog {
   margin-bottom: 95px;
+}
+.catalog__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 65px;
+  text-transform: uppercase;
+}
+.catalog__filter-filter {
+  font-size: 14px;
+  font-weight: 600;
+  width: 360px;
+  padding-left: 15px;
+  margin-right: 30px;
+  color: #000;
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+}
+.catalog__filter-filter svg {
+  width: 15px;
+  fill: #000;
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+}
+.catalog__filter-filter:hover {
+  color: #f16d7f;
+  cursor: pointer;
+}
+.catalog__filter-filter:hover svg {
+  fill: #f16d7f;
+}
+.catalog__filter-categories {
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360px;
+  color: #6f6e6e;
+}
+.catalog__filter-item .fa-chevron-down {
+  margin-left: 10px;
+}
+.catalog__filter-item:not(:last-child) {
+  margin-right: 28px;
 }
 .catalog__title {
   text-align: center;
@@ -283,13 +330,17 @@ body {
 }
 .catalog__card {
   width: 360px;
+  background: #f8f8f8;
+  margin-bottom: 30px;
 }
 .catalog__card:not(:nth-child(3n)) {
-  margin: 0 30px 30px 0;
+  margin-right: 30px;
 }
 .catalog__card-img {
-  width: 100%;
   position: relative;
+}
+.catalog__card-img img {
+  width: 100%;
 }
 .catalog__card-btn {
   position: absolute;
@@ -348,7 +399,6 @@ body {
   transition: all linear 0.2s;
 }
 .catalog__card-text {
-  background: #f8f8f8;
   padding: 25px 29px 20px 18px;
 }
 .catalog__card-name {
@@ -397,6 +447,48 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.catalog__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.catalog__pagination-iner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EBEBEB;
+  padding: 15px;
+  color: #c4c4c4;
+}
+.catalog__pagination-item {
+  font-size: 16px;
+  font-weight: 300;
+}
+.catalog__pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+.catalog__pagination-item:nth-child(6), .catalog__pagination-item:nth-child(7) {
+  margin: 0;
+}
+.catalog__pagination-item:hover:not(:nth-child(7)) {
+  color: #ef5b70;
+}
+.catalog__pagination-item--active {
+  color: #f16d7f;
+}
+.catalog__pagination-item--span {
+  margin: 0;
+}
+.catalog__pagination-item--arrow {
+  color: #000;
+  margin-left: 18px;
+}
+.catalog__pagination-item--arrow:not(:last-child) {
+  margin: 0 18px 0 0;
+}
 
 .advantage {
   background: #222224;
@@ -432,8 +524,8 @@ body {
   margin: 28px 0 16px 0;
 }
 .advantage__description {
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   opacity: 0.6;
   line-height: 1.2em;
 }
@@ -477,9 +569,9 @@ body {
   border-radius: 50%;
 }
 .comment__text {
-  font-style: italic;
-  font-weight: 400;
   font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
   text-align: center;
   line-height: 1.2em;
 }
@@ -500,14 +592,14 @@ body {
   margin-right: 100px;
 }
 .comment__title {
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
   line-height: 1.672em;
   text-transform: uppercase;
 }
 .comment__description {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.672em;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -528,49 +620,53 @@ body {
   transition: all linear 0.1s;
 }
 .comment__input:hover {
-  background: #d6d6d6;
+  background: #cfcfcf;
 }
 .comment__input::-webkit-input-placeholder {
-  text-transform: capitalize;
   font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
   opacity: 0.67;
   color: inherit;
 }
 .comment__input:-ms-input-placeholder {
-  text-transform: capitalize;
   font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
   opacity: 0.67;
   color: inherit;
 }
 .comment__input::-ms-input-placeholder {
-  text-transform: capitalize;
   font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
   opacity: 0.67;
   color: inherit;
 }
 .comment__input::placeholder {
-  text-transform: capitalize;
   font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
   opacity: 0.67;
   color: inherit;
 }
 .comment__input:focus {
   outline: none;
   border: #f16d7f 1px solid;
-  background: #d6d6d6;
+  background: #cfcfcf;
 }
 .comment__button {
-  background: #f16d7f;
-  color: #fff;
   font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background: #f16d7f;
   padding: 0 19px;
   border-radius: 0 25px 25px 0;
-  font-weight: 400;
-  -webkit-transition: all linear 0.1s;
-  transition: all linear 0.1s;
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
 }
 .comment__button:hover {
-  background: #eb5b6e;
+  background: #ef566b;
 }
 
 .footer {
@@ -591,8 +687,8 @@ body {
 }
 .footer__copyright {
   font-size: 16px;
-  color: #fbfbfb;
   font-weight: 400;
+  color: #fbfbfb;
 }
 .footer__social {
   display: -webkit-box;
@@ -622,4 +718,54 @@ body {
 .footer__item:hover {
   background: #f16d7f;
   color: #fff;
+}
+
+.nav {
+  background: #f8f3f4;
+  padding: 60px 0;
+}
+.nav__iner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+.nav__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #f16d7f;
+}
+.nav__crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #636363;
+}
+.nav__item {
+  font-size: 14px;
+  font-weight: 300;
+}
+.nav__item:hover {
+  color: black;
+}
+.nav__item--active {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f16d7f;
+}
+.nav__item--active:hover {
+  color: #ed3e56;
+}
+.nav__link {
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+}
+.nav__span {
+  margin: 0 5px;
 }

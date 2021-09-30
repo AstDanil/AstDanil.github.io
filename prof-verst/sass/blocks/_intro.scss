@@ -1,0 +1,30 @@
+.intro {
+	background: #f1e4e6;
+
+	&__iner {
+		background: url(../img/intro__bg.png) no-repeat;
+		background-size: contain;
+		background-position: -200px bottom;
+		min-height: 725px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__title {
+		@include fs-fw(32px, 700);
+		color: #222;
+		border-left: 12px solid $mainColor;
+		padding-left: 16px;
+		line-height: 1.4em;
+		text-transform: uppercase;
+		margin-right: 90px;
+	}
+	&__title--strong {
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+	&__title--red {
+		color: $mainColor;
+		font-size: 1.15625em;
+	}
+}

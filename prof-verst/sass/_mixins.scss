@@ -1,0 +1,4 @@
+@mixin fs-fw($fs:14px, $fw:400) {
+	font-size: $fs;
+	font-weight: $fw;
+}
