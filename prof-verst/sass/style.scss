@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	max-width: $desctopWidth;
+	width: $desctopWidth;
 	margin: 0 auto;
 }
 
@@ -36,3 +36,6 @@ body {
 
 // Nav
 @import "blocks/nav";
+
+// Registration
+@import "blocks/registration";

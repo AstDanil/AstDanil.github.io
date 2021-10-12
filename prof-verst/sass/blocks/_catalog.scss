@@ -1,12 +1,12 @@
 .catalog {
 	margin-bottom: 95px;
 
-	&__filter {
+	&-filter {
 		display: flex;
 		padding: 50px 0 65px;
 		text-transform: uppercase;
 
-		&-filter {
+		&__filter {
 			@include fs-fw(14px, 600);
 			width: 360px;
 			padding-left: 15px;
@@ -16,6 +16,7 @@
 
 			svg {
 				width: 15px;
+				margin-left: 11px;
 				fill: #000;
 				transition: all linear .1s;
 			}
@@ -28,13 +29,13 @@
 				}
 			}
 		}
-		&-categories {
+		&__categories {
 			@include fs-fw();
 			display: flex;
 			width: 360px;
 			color: #6f6e6e;
 		}
-		&-item {
+		&__item {
 			.fa-chevron-down {
 				margin-left: 10px;
 			}
@@ -178,6 +179,7 @@
 		}
 		&-item {
 			@include fs-fw(16px, 300);
+			transition: all linear .1s;
 
 			&:not(:last-child) {
 				margin-right: 20px;

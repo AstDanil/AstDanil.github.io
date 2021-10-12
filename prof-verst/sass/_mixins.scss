@@ -2,3 +2,7 @@
 	font-size: $fs;
 	font-weight: $fw;
 }
+
+@mixin bgCategories($src:url(../img/category__img1.jpg), $color-mascs:linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7))) {
+	background: $color-mascs, $src no-repeat center;
+}

@@ -15,21 +15,22 @@
 		flex-direction: column;
 		text-transform: uppercase;
 
+		&:hover {
+			.category__text--big {
+				transform: rotate(360deg)
+			}
+		}
 		&1 {
-			background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)),
-				url(../img/category__img1.jpg) no-repeat center;
+			@include bgCategories(url(../img/category__img1.jpg));
 		}
 		&2 {
-			background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)),
-				url(../img/category__img2.jpg) no-repeat center;
+			@include bgCategories(url(../img/category__img2.jpg));
 		}
 		&3 {
-			background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)),
-				url(../img/category__img3.jpg) no-repeat center;
+			@include bgCategories(url(../img/category__img3.jpg));
 		}
 		&4 {
-			background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)),
-				url(../img/category__img4.jpg) no-repeat center;
+			@include bgCategories(url(../img/category__img4.jpg));
 			width: 100%;
 			height: 180px;
 			margin-top: 30px;
@@ -43,10 +44,9 @@
 		@include fs-fw(24px, 700);
 		line-height: 1.2em;
 		color: $mainColor;
-		transition: all linear 0.2s;
+		transition: all linear .5s;
 
 		&:hover {
-			transform: scale(1.02);
 			color: darken($mainColor, 10%);
 		}
 	}
