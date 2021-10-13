@@ -3,6 +3,9 @@
 
 	&__iner {
 		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
 		padding: 100px 0;
 	}
 	&__item {
@@ -10,16 +13,13 @@
 		align-items: center;
 		flex-direction: column;
 		width: 360px;
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
 	}
 	&__text {
 		text-align: center;
 		color: #fbfbfb;
 	}
 	&__name {
-		font-size: 20px;
+		@include fs-fw(20px);
 		margin: 28px 0 16px 0;
 	}
 	&__description {
