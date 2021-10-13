@@ -4,21 +4,36 @@
 	&-filter {
 		display: flex;
 		padding: 50px 0 65px;
-		text-transform: uppercase;
 
 		&__filter {
 			@include fs-fw(14px, 600);
+			position: relative;
 			width: 360px;
-			padding-left: 15px;
+			padding:	13px 0 0 15px;
 			margin-right: 30px;
+
+			&[open] {
+				background: #fff;
+				box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.21);
+
+				.catalog-filter__title {
+					color: $mainColor;
+				}
+				svg {
+					fill: $mainColor;
+				}
+			}
+		}
+		&__title {
 			color: #000;
-			transition: all linear .1s;
+			text-transform: uppercase;
+			transition: all linear .2s;
 
 			svg {
 				width: 15px;
 				margin-left: 11px;
 				fill: #000;
-				transition: all linear .1s;
+				transition: all linear .2s;
 			}
 			&:hover {
 				color: $mainColor;
@@ -29,20 +44,113 @@
 				}
 			}
 		}
+		&__box {
+			position: absolute;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			padding: 16px;
+			background: #fff;
+			box-shadow: 6px 35px 35px rgba(0, 0, 0, 0.21);
+		}
+		&__subfilter {
+			@include fs-fw(14px, 400);
+			
+			&:not(:last-child) {
+				margin-bottom: 18px;
+			}
+			&-title {
+				padding: 10px 0 10px 11px;
+				border-left: 5px solid $mainColor;
+				border-bottom: 1px solid #EBEBEB;
+				color: #6f6e6e;
+				text-transform: uppercase;
+				transition: all linear .1s;
+
+				&:hover {
+					color: #000;
+					cursor: pointer;
+				}
+			}
+			&-list {
+				padding: 24px 0;
+			}
+			&-item {
+				color: #6f6e6e;
+				padding: 0 15px;
+				transition: all linear .1s;
+
+				&:hover {
+					color: #000;
+				}
+				&:not(:last-child) {
+					margin-bottom: 11px;
+				}
+			}
+			&[open] {
+				margin-bottom: 0;
+
+				summary {
+					color: $mainColor;
+				}
+			}
+		}
 		&__categories {
 			@include fs-fw();
 			display: flex;
+			padding-top: 13px;
 			width: 360px;
 			color: #6f6e6e;
-		}
-		&__item {
-			.fa-chevron-down {
-				margin-left: 10px;
+			text-transform: uppercase;
+
+			&-col {
+				position: relative;
+
+				summary {
+					transition: all linear .1s;
+				}
+				&[open] {
+					summary {
+						color: #000;
+					}
+				}
+				&:hover {
+					summary {
+						color: #000;
+					}
+				}
+				.fa-chevron-down {
+					margin-left: 10px;
+				}
+				&:not(:last-child) {
+					margin-right: 28px;
+				}
 			}
-			&:not(:last-child) {
-				margin-right: 28px;
+			&-box {
+				position: absolute;
+				z-index: 1;
+				top: 22px;
+				left: -10px;
+				width: 80px;
+				padding: 7px 9px 11px;
+				background: #fff;
+				box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+			}
+			&-list {
+				list-style-type: none;
+			}
+			&-item {
+				label {
+					margin-left: 9px;
+					transition: all linear .1s;
+
+					&:hover {
+						color: #000;
+					}
+				}
 			}
 		}
+		
 	}
 	&__title {
 		text-align: center;
@@ -60,16 +168,12 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 30px;
 		margin-bottom: 48.5px - 30px;
 	}
 	&__card {
 		width: 360px;
 		background: #f8f8f8;
-		margin-bottom: 30px;
-
-		&:not(:nth-child(3n)) {
-			margin-right: 30px;
-		}
 		&-img {
 			position: relative;
 
@@ -97,10 +201,10 @@
 				opacity: 1;
 			}
 			button {
+				@include fs-fw(14px);
 				border: 1px solid #fff;
 				padding: 9px 15px;
 				color: #fff;
-				font-size: 14px;
 				display: flex;
 				align-items: center;
 				transition: all linear 0.2s;
@@ -127,24 +231,24 @@
 			padding: 25px 29px 20px 18px;
 		}
 		&-name {
-			font-size: 13px;
+			@include fs-fw(13px);
 			text-transform: uppercase;
 			transition: all linear 0.2s;
-
+			
 			&:hover {
 				color: $mainColor;
 			}
 		}
 		&-description {
+			@include fs-fw(14px);
 			color: #5d5d5d;
-			font-size: 14px;
-			margin: 12px 0 18px;
+			margin: 13px 0 18px;
 		}
 		&-price {
+			@include fs-fw(16px);
 			display: block;
 			color: $mainColor;
 			text-transform: uppercase;
-			font-size: 16px;
 		}
 	}
 	&__link {
@@ -153,9 +257,9 @@
 		align-items: center;
 
 		a {
+			@include fs-fw(16px);
 			border: 1px solid #ff6a6a;
-			padding: 14px 39px 13px;
-			font-size: 16px;
+			padding: 15px 39px;
 			color: #ff6a6a;
 			text-transform: capitalize;
 			transition: all linear 0.2s;

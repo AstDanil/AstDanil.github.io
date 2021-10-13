@@ -1,0 +1,105 @@
+@media (max-width: $desctopWidth + 40px) {
+	// Container
+	.container {
+		width: $tabletWidth + 30px;
+		padding: 0 15px;
+	}
+
+	// Header
+	.header {
+		&__iner {
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+	}
+	
+	// Intro
+	.intro {
+		&__iner {
+			background-position: 0px bottom;
+			min-height: 368px;
+		}
+		&__title {
+			@include fs-fw(24px, 700);
+			margin-right: 0px;
+		}
+	}
+
+	// Category
+	.category {
+		gap: 19px;
+		margin: 20px 0 155px;
+
+		&__item {
+			width: 232.5px;
+			height: 168px;
+
+			&4 {
+				width: 100%;
+				height: 116px;
+			}
+		}
+	}
+
+	// Catalog
+	.catalog {
+		margin-bottom: 65px;
+
+		&__title {
+			margin-bottom: 72px;
+
+			&-title {
+				margin-bottom: 3px;
+			}
+		}
+		&__list {
+			margin-bottom: 32.5px - 16px;
+			gap: 0;
+		}
+		&__card {
+			margin-bottom: 16px;
+
+			&:not(:nth-child(2n)) {
+				margin-right: 14px;
+			}
+			&-text {
+				padding: 24px 17px 20px ;
+			}
+		}
+	}
+
+	// Advantage
+	.advantage {
+		&__iner {
+			flex-direction: column;
+			gap: 48px;
+			padding: 48px 0 64px;
+		}
+		&__name {
+			@include fs-fw(20px);
+			margin-top: 19px;
+		}
+	}
+
+	// Comment
+	.comment {
+		padding: 64px 0 140px;
+	
+		&__iner {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 48px;
+		}
+		&__text {
+			@include fs-fw(18px);
+		}
+		&__right {
+			margin-right: 0px;
+		}
+		&__description {
+			@include fs-fw(14px);
+			margin-bottom: 27px;
+		}
+	}
+}

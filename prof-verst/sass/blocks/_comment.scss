@@ -1,7 +1,7 @@
 .comment {
 	padding: 95px 0 165px;
 	background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
-		url(../img/comment__bg.jpg) no-repeat;
+		url(../img/comment__bg.jpg) no-repeat #f2f2f2;
 	background-size: cover;
 	background-position: left bottom;
 
@@ -78,7 +78,7 @@
 		}
 	}
 	&__button {
-		@include fs-fw();
+		@include fs-fw(14px);
 		color: #fff;
 		background: $mainColor;
 		padding: 0 19px;
