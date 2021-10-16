@@ -44,10 +44,99 @@
 		}
 	}
 
+	// Nav
+	.nav {
+		padding: 60px 0 59px;
+	
+		&__iner {
+			flex-direction: column;
+			justify-content: center;
+			gap: 32px;
+		}
+	}
+
 	// Catalog
 	.catalog {
 		margin-bottom: 96px;
-
+		
+		&-filter {
+			display: flex;
+			align-items: center;
+			padding: 11px 0 46px;
+	
+			&__filter {
+				width: 40px;
+				margin-right: 40px;
+	
+			}
+			&__title {
+				span {
+					display: none;
+				}
+				svg {
+					width: 36px;
+					margin-left: 0;
+				}
+			}
+			&__box {
+				width: 360px;
+			}
+			&__categories {
+				@include fs-fw(12px);
+				display: flex;
+				padding-top: 13px;
+				width: 360px;
+				color: #6f6e6e;
+				text-transform: uppercase;
+	
+				&-col {
+					position: relative;
+	
+					summary {
+						transition: all linear .1s;
+					}
+					&[open] {
+						summary {
+							color: #000;
+						}
+					}
+					&:hover {
+						summary {
+							color: #000;
+						}
+					}
+					.fa-chevron-down {
+						margin-left: 10px;
+					}
+					&:not(:last-child) {
+						margin-right: 28px;
+					}
+				}
+				&-box {
+					position: absolute;
+					z-index: 1;
+					top: 22px;
+					left: -10px;
+					width: 80px;
+					padding: 7px 9px 11px;
+					background: #fff;
+					box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+				}
+				&-list {
+					list-style-type: none;
+				}
+				&-item {
+					label {
+						margin-left: 9px;
+						transition: all linear .1s;
+	
+						&:hover {
+							color: #000;
+						}
+					}
+				}
+			}
+		}
 		&__title {
 			margin-bottom: 65px;
 
@@ -57,13 +146,15 @@
 		}
 		&__list {
 			margin-bottom: 40px - 16px;
-			gap: 0;
 		}
-		&__card {
-			&:not(:nth-child(2n)) {
-				margin-right: 0;
-			}
-		}
+	}
+
+	// Registration
+	.content {
+		flex-direction: column;
+		gap: 40px;
+		padding-top: 40px;
+		padding-bottom: 96px;
 	}
 
 	// Advantage

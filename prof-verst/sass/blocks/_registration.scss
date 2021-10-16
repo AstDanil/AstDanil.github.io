@@ -1,11 +1,12 @@
 .content {
 	display: flex;
 	justify-content: space-between;
-	padding: 64px 0 96px;
+	gap: 128px;
+	padding-top: 64px;
+	padding-bottom: 96px;
 }
 .registration {
 	min-width: 360px;
-	margin-right: 128px;
 
 	&__box {
 		margin-bottom: 35px;
@@ -81,6 +82,7 @@
 
 	&-list {
 		@include fs-fw(24px, 300);
+		line-height: 1.2em;
 
 		&__list {
 			list-style-type: none;
@@ -98,7 +100,7 @@
 		}
 		&__item {
 			padding-left: 42px;
-			background: url(../../icon/registration-list__icon.svg) no-repeat left;
+			background: url(../icon/registration-list__icon.svg) no-repeat left 6px;
 			
 			&:not(:last-child) {
 				margin-bottom: 16px;

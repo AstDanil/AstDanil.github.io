@@ -12,7 +12,7 @@
 			padding-bottom: 18px;
 		}
 	}
-	
+
 	// Intro
 	.intro {
 		&__iner {
@@ -45,6 +45,17 @@
 	.catalog {
 		margin-bottom: 65px;
 
+		&-filter {
+			padding: 11px 0 40px;
+	
+			&__filter {
+				padding: 13px 0 0 0;
+			}
+			&__categories {
+				justify-content: flex-end;
+			}
+			
+		}
 		&__title {
 			margin-bottom: 72px;
 
@@ -54,16 +65,35 @@
 		}
 		&__list {
 			margin-bottom: 32.5px - 16px;
-			gap: 0;
+			gap: 16px;
 		}
 		&__card {
-			margin-bottom: 16px;
-
-			&:not(:nth-child(2n)) {
-				margin-right: 14px;
-			}
 			&-text {
 				padding: 24px 17px 20px ;
+			}
+		}
+	}
+
+	// Registration
+	.content {
+		gap: 22px;
+		padding-top: 40px;
+		padding-bottom: 96px;
+	}
+	.registration {
+		&-list {
+			@include fs-fw(16px, 300);
+	
+			&__title {
+				margin-bottom: 32px;
+			}
+			&__item {
+				padding-left: 42px;
+				background: url(../icon/registration-list__icon.svg) no-repeat left 3px;
+				
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
 			}
 		}
 	}

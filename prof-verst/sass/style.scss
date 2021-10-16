@@ -12,7 +12,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-
+main {
+	flex-grow: 1;
+}
 .container {
 	width: $desctopWidth + 30px;
 	margin: 0 auto;

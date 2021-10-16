@@ -167,6 +167,7 @@
 	}
 	&__list {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
 		margin-bottom: 48.5px - 30px;
