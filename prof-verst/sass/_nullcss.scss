@@ -9,6 +9,9 @@ a:not([class]){text-decoration-skip-ink: auto;}
 a{text-decoration: none;cursor: pointer;font: inherit;display: block;color: inherit;}
 img{max-width: 100%;display: block;}
 input,button,textarea,select {font: inherit;color: inherit;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance:textfield;}
 button {background: none;border: none;
 &:hover {cursor: pointer;}
 &:active {border: none;}}

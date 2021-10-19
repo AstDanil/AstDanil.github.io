@@ -1,8 +1,8 @@
 @media (max-width: $tabletWidth + 30px) {
 	// Container
 	.container {
-		width: $mobileWidth + 20px;
-		padding: 0 10px;
+		width: $mobileWidth + 14px;
+		padding: 0 7px;
 	}
 
 	// Header
@@ -15,7 +15,13 @@
 			display: none;
 		}
 	}
-	
+	// Menu
+	.menu {
+		&__iner {
+			width: 100vw;
+		}
+	}
+
 	// Intro
 	.intro {
 		&__iner {
@@ -157,6 +163,130 @@
 		padding-bottom: 96px;
 	}
 
+	// Product
+	.product {
+		&-slider {
+			border-bottom: 1px solid #eaeaea;
+			padding-bottom: 0;
+
+			&__img {
+				max-height: 565px;
+			}
+		}
+		&-description {
+			margin: 0 0 65px;
+			border: none;
+
+			&__title {
+				margin-bottom: 32px;
+			}
+			&__text {
+				max-width: 326px;
+				line-height: 1.4em;
+			}
+			&__price {
+				line-height: 1.3em;
+			}
+			&__line {
+				width: 175px;
+				margin: 32px 0 49px;
+			}
+			&__choose {
+				@include fs-fw(10px);
+				margin-bottom: 65px;
+	
+				&-item {
+					text-transform: uppercase;
+	
+					&:not(:last-child) {
+						margin-right: 25px;
+					}
+					span {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	// Basket
+	.content--basket {
+		gap: 48px;
+		padding-top: 39px;
+		padding-bottom: 96px;
+	}
+	.basket {
+		&__list {
+			margin-bottom: 30px;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin: 0 0 32px;
+			}
+			&-img {
+				width: 144px;
+				min-height: 188px;
+
+				img {
+					width: 144px;
+					min-height: 188px;
+				}
+			}
+			&-description {
+				padding: 13px 17px;
+			}
+			&-title {
+				@include fs-fw(16px);
+				max-width: 130px;
+				margin-bottom: 25px;
+			}
+			&-option {
+				@include fs-fw(14px);
+	
+				&:not(:last-child) {
+					margin-bottom: 4px;
+				}
+			}
+			&-number {
+				margin-left: 15px;
+	
+				input {
+					@include fs-fw(10px);
+					width: 25px;
+					height: 15px;
+				}
+			}
+			&-cross {
+				top: 13px;
+				right: 12px;
+				width: 10px;
+			}
+		}
+		&__buttons {
+			gap: 9px;
+
+			&-item {
+				@include fs-fw(12px, 300);
+				text-transform: none;
+				padding: 9px 35px;
+			}
+		}
+		&-form {
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+	
+			&__total {
+				margin-top: 39px;
+			}
+		}
+	}
+	.registration {
+		&__box--basket {
+			margin-bottom: 0;
+		}
+	}
+	
 	// Advantage
 	.advantage {
 		&__iner {
@@ -171,6 +301,7 @@
 		background-position-x: -400px;
 	
 		&__iner {
+			padding: 0;
 			gap: 60px;
 		}
 		&__description {

@@ -1,0 +1,69 @@
+.menu {
+	display: none;
+	position: absolute;
+	top: 75px;
+	right: 0;
+
+	&__iner {
+		position: relative;
+		padding: 37px 34px;
+		min-width: 232px;
+		min-height: 764px;
+		background: #fff;
+	}
+	&__title {
+		@include fs-fw(14px, 700);
+		text-transform: uppercase;
+		margin-bottom: 24px;
+	}
+	&__submenu {
+		&-iner {
+			padding-left: 21px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__subtitle {
+		@include fs-fw(14px, 400);
+		text-transform: uppercase;
+		color: $mainColor;
+		margin-bottom: 12px;
+		transition: all linear .1s;
+		
+		&:hover {
+			color: darken($mainColor, 25%);
+		}
+	}
+	&__item {
+		@include fs-fw(14px, 400);
+		color: #6f6e6e;
+		transition: all linear .1s;
+
+		&:not(:last-child) {
+			margin-bottom: 11px;
+		}
+		&:hover {
+			color: #000;
+		}
+	}
+	&__cross {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+
+		svg {
+			width: 12px;
+			fill: #6F6E6E;
+			transition: all linear .1s;
+		}
+		&:hover {
+			svg {
+				fill: darken(#6F6E6E, 25%);
+			}
+		}
+	}
+}
+.menu--open {
+	display: block;
+}

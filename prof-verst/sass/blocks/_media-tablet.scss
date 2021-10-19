@@ -47,14 +47,13 @@
 
 		&-filter {
 			padding: 11px 0 40px;
-	
+
 			&__filter {
 				padding: 13px 0 0 0;
 			}
 			&__categories {
 				justify-content: flex-end;
 			}
-			
 		}
 		&__title {
 			margin-bottom: 72px;
@@ -69,8 +68,11 @@
 		}
 		&__card {
 			&-text {
-				padding: 24px 17px 20px ;
+				padding: 24px 17px 20px;
 			}
+		}
+		&__card--none {
+			display: none;
 		}
 	}
 
@@ -83,14 +85,14 @@
 	.registration {
 		&-list {
 			@include fs-fw(16px, 300);
-	
+
 			&__title {
 				margin-bottom: 32px;
 			}
 			&__item {
 				padding-left: 42px;
 				background: url(../icon/registration-list__icon.svg) no-repeat left 3px;
-				
+
 				&:not(:last-child) {
 					margin-bottom: 16px;
 				}
@@ -98,6 +100,63 @@
 		}
 	}
 
+	// Product
+	.product {
+		&-slider {
+			border-bottom: 1px solid #eaeaea;
+			padding-bottom: 0;
+
+			&__img {
+				max-height: 565px;
+			}
+		}
+		&-description {
+			margin: 0 0 128px;
+			padding-bottom: 0;
+			border: none;
+
+			&::after {
+				content: "";
+				width: 100vw;
+				height: 1px;
+				background: #eaeaea;
+				margin-top: 65px;
+			}
+		}
+	}
+
+	// Basket
+	.content--basket {
+		flex-direction: column;
+		gap: 64px;
+		padding-top: 59px;
+	}
+	.basket {
+		&__list {
+			margin-bottom: 62px;
+		}
+		&__item {
+			width: 100%;
+		}
+		&__buttons {
+			justify-content: center;
+		}
+		&-form {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 15px;
+	
+			&__total {
+				margin-top: 39px;
+			}
+		}
+	}
+	.registration {
+		&__box--basket {
+			margin-bottom: 0;
+		}
+	}
+	
 	// Advantage
 	.advantage {
 		&__iner {
@@ -114,7 +173,7 @@
 	// Comment
 	.comment {
 		padding: 64px 0 140px;
-	
+
 		&__iner {
 			flex-direction: column;
 			align-items: center;

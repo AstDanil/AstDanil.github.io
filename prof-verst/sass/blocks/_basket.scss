@@ -1,0 +1,186 @@
+.content--basket {
+	padding-top: 96px;
+	padding-bottom: 128px;
+}
+.basket {
+	&__list {
+		margin-bottom: 72px;
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		width: 652px;
+		box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+		&:not(:last-child) {
+			margin: 0 0 40px;
+		}
+		&-img {
+			width: 262px;
+		}
+		&-description {
+			padding: 28px 31px 62px;
+		}
+		&-title {
+			@include fs-fw(24px);
+			line-height: 1.2em;
+			color: #222;
+			text-transform: uppercase;
+			max-width: 190px;
+			margin-bottom: 42px;
+		}
+		&-option {
+			@include fs-fw(22px);
+			color: #575757;
+
+			&:not(:last-child) {
+				margin-bottom: 9px;
+			}
+		}
+		&-price {
+			color: $mainColor;
+		}
+		&-number {
+			display: inline-block;
+			margin-left: 24px;
+
+			input {
+				@include fs-fw(18px);
+				width: 44px;
+				height: 25px;
+				outline: 1px solid #eaeaea;
+				border: none;
+				text-align: center;
+				transition: all linear .1s;
+
+				&:hover {
+					outline-color: darken(#eaeaea, 10%);
+				}
+				&:focus {
+					outline-color: darken(#eaeaea, 30%);
+				}
+			}
+		}
+		&-cross {
+			position: absolute;
+			top: 28px;
+			right: 22px;
+			width: 18px;
+
+			svg {
+				fill: #575757;
+				transition: all linear .1s;
+			}
+			&:hover {
+				svg {
+					fill: #000;
+				}
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+		gap: 48px;
+		justify-content: space-between;
+
+		&-item {
+			@include fs-fw(14px, 300);
+			text-transform: uppercase;
+			padding: 16px 40px;
+			border: 1px solid #a4a4a4;
+			transition: all linear .2s;
+
+			&:hover {
+				border-color: $mainColor;
+				color: $mainColor;
+			}
+		}
+		&-item--form {
+			@include fs-fw(11px, 300);
+			padding: 10px 15px;
+		}
+	}
+	&-form {
+		display: flex;
+		flex-direction: column;
+		gap: 57px;
+
+		&__total {
+			padding: 40px 44px;
+			background: #f5f3f3;
+			text-align: right;
+			text-transform: uppercase;
+
+			&-subtotal {
+				@include fs-fw(11px, 300);
+				margin-bottom: 12px;
+
+				span {
+					&:first-child {
+						margin-right: 10px;
+					}
+				}
+			}
+			&-total {
+				@include fs-fw(16px, 300);
+				margin-bottom: 21px;
+
+				span {
+					&:first-child {
+						margin-right: 15px;
+					}
+				}
+			}
+			&-price {
+				@include fs-fw(16px, 700);
+				color: $mainColor;
+			}
+			&-line {
+				width: 100%;
+				height: 1px;
+				background: #e2e2e2;
+				margin-bottom: 17px;
+			}
+			&-btn {
+				@include fs-fw(16px, 300);
+				color: #fff;
+				text-align: center;
+				background: $mainColor;
+				padding: 15px 40px;
+				transition: all linear .2s;
+
+				&:hover {
+					background: darken($mainColor, 5%);
+				}
+			}
+		}
+	}
+}
+.registration {
+	&__box--basket {
+		width: 360px;
+	}
+	&__title--basket {
+		text-transform: uppercase;
+	}
+	&__input--basket {
+		@include fs-fw(13px, 300);
+		color: #222;
+		margin-bottom: 20px;
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			margin-bottom: 20px;
+		}
+		&:nth-child(2) {
+			margin-bottom: 20px;
+		}
+		&:nth-child(4) {
+			margin-bottom: 20px;
+		}
+		&:hover,
+		&:focus {
+			color: #000;
+		}
+	}
+}

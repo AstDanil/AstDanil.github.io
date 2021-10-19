@@ -6,8 +6,6 @@
 	padding-bottom: 96px;
 }
 .registration {
-	min-width: 360px;
-
 	&__box {
 		margin-bottom: 35px;
 		border: 0;
@@ -19,7 +17,7 @@
 	}
 	&__input {
 		display: block;
-		width: 100%;
+		width: 360px;
 		padding: 13px 17px 16px;
 		border: 1px solid #A4A4A4;
 		transition: all linear .2s;

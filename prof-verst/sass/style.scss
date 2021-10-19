@@ -24,6 +24,7 @@ main {
 
 // Header
 @import "blocks/header";
+@import "blocks/menu";
 
 // Intro
 @import "blocks/intro";
@@ -48,6 +49,12 @@ main {
 
 // Registration
 @import "blocks/registration";
+
+// Slider
+@import "blocks/slider";
+
+// Basket
+@import "blocks/basket";
 
 // Media
 @import "blocks/media-tablet";

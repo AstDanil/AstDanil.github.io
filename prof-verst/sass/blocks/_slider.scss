@@ -1,0 +1,133 @@
+.product {
+	&-slider {
+		position: relative;
+		z-index: -1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #f7f7f7;
+		border: 1px solid #eaeaea;
+		padding-bottom: $sliderShift;
+
+		&__img {
+			max-height: 700px;
+		}
+		&__btn {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #2a2a2a26;
+			width: 47px;
+			height: 47px;
+			font-size: 24px;
+			transition: all linear 0.1s;
+
+			&:hover {
+				color: $mainColor;
+			}
+			&-left {
+				left: 0;
+			}
+			&-right {
+				right: 0;
+			}
+		}
+	}
+	&-description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: - $sliderShift;
+		margin-bottom: 128px;
+		padding: 65px 0;
+		background: #fff;
+		border: 1px solid #eaeaea;
+
+		&__title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 48px;
+			text-transform: uppercase;
+
+			&-title {
+				@include fs-fw(14px, 300);
+				color: $mainColor;
+			}
+			&-line {
+				width: 63px;
+				height: 3px;
+				background: #ef5b70;
+				margin: 12px 0;
+			}
+			&-text {
+				@include fs-fw(18px, 300);
+			color: #4d4d4d;
+			}
+		}
+		&__text {
+			@include fs-fw(14px, 300);
+			color: #5e5e5e;
+			max-width: 550px;
+			text-align: center;
+			margin-bottom: 32px;
+		}
+		&__price {
+			@include fs-fw(24px, 300);
+			color: $mainColor;
+		}
+		&__line {
+			width: 642px;
+			height: 1px;
+			background: #f0dde0;
+			margin: 65px 0;
+		}
+		&__choose {
+			@include fs-fw();
+			color: #6f6e6e;
+			display: flex;
+			margin-bottom: 48px;
+
+			&-item {
+				text-transform: uppercase;
+
+				&:not(:last-child) {
+					margin-right: 22px;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				span {
+					margin-right: 9px;
+				}
+			}
+		}
+		&__btn {
+			@include fs-fw();
+			border: 1px solid $mainColor;
+			padding: 9px 57px 9px 24px;
+			color: $mainColor;
+			display: flex;
+			align-items: center;
+			transition: all linear 0.2s;
+
+			svg {
+				width: 26px;
+				height: 24px;
+				fill: $mainColor;
+				margin-right: 23px;
+				transition: all linear 0.2s;
+			}
+			&:hover {
+				border-color: darken($mainColor, 10%);
+				color: darken($mainColor, 10%);
+				transform: scale(1.1);
+
+				svg {
+					fill: darken($mainColor, 10%);
+				}
+			}
+		}
+	}
+}
