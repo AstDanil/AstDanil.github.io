@@ -1,0 +1,286 @@
+$mainTextColor: #070707;
+$mainGreyColor: #828282;
+$mainBackgroundColor: #f6f6f6;
+$mainFontSize: 18px;
+$titleFontSize: 34px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $mainFontSize;
+    color: $mainTextColor;
+}
+
+.container {
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+// Header
+
+.header {
+    margin-bottom: 104px;
+    font-weight: 700;
+}
+
+.nav {
+    margin: 0 0 40px 0;
+    border-bottom: 1px solid $mainGreyColor;
+
+    ul {
+        padding: 32px 0;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+
+        li {
+            a {
+                font-size: $mainFontSize;
+                color: $mainGreyColor;
+                transition: all .1s linear;
+
+                &:hover {
+                    color: $mainTextColor;
+                }
+            }
+
+        }
+    }
+
+    &__item {
+        &-active {
+            a {
+                color: $mainTextColor;
+            }
+        }
+
+    }
+}
+
+.intro {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        display: flex;
+        align-items: flex-end;
+        font-weight: 500;
+    }
+
+    &__title {
+        font-style: $titleFontSize;
+    }
+
+    &__language {
+        display: flex;
+        gap: 5px;
+        align-items: flex-end;
+        transform: rotate(-90deg);
+
+        &-active {
+            color: #000;
+
+            &-none {
+                color: $mainGreyColor;
+                transition: all .1s linear;
+
+                &:hover {
+                    color: #5a5a5a;
+                }
+            }
+        }
+
+        span {
+            color: #000;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+// About me
+
+.about {
+    text-align: center;
+    background: $mainBackgroundColor;
+    padding: 137px 0 57px;
+
+    &__iner {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    &__description {
+        font-size: $mainFontSize;
+
+        div {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+// Skills
+
+.skills {
+    padding: 91px 0 110px;
+    text-align: center;
+
+    &__title {
+        font-size: $titleFontSize;
+        font-weight: 700;
+        margin-bottom: 69px;
+    }
+
+    &__text {
+        margin-bottom: 83px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 166px;
+        height: 206px;
+    }
+
+    &__description {
+        margin: 24px auto 32px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__rate {
+        display: flex;
+        gap: 12px;
+    }
+
+
+
+
+}
+
+
+// Portfolio
+
+.portfolio {
+    background: $mainBackgroundColor;
+    padding: 112px 0 95px;
+    text-align: center;
+
+    &__title {
+        font-size: $titleFontSize;
+        font-weight: 700;
+        margin-bottom: 64px;
+    }
+
+    &__iner {
+        display: flex;
+        flex-direction: column;
+        gap: 99px;
+    }
+
+    &__preview {
+        margin-bottom: 45px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        color: $mainTextColor;
+        text-decoration: underline;
+    }
+}
+
+
+// Footer
+
+.footer {
+    padding: 114px 0 125px;
+    text-align: center;
+
+    &__title {
+        font-size: $titleFontSize;
+        font-weight: 700;
+        margin-bottom: 37px;
+    }
+
+    &__description {
+        font-weight: 500;
+        margin-bottom: 37px;
+    }
+
+    &__button {
+        padding: 11px 30px;
+        margin-bottom: 85px;
+        background: #000;
+        border: 3px #000 solid;
+        border-radius: 25px;
+        font-size: $mainFontSize;
+        color: #fff;
+        font-weight: 700;
+        box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.2);
+        transition: all .1s linear;
+
+        &:hover {
+            background: none;
+            color: $mainTextColor;
+            cursor: pointer;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-bottom: 45px;
+
+        img {
+            transition: all .1s linear;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 14px;
+        color: $mainGreyColor;
+        font-weight: 500;
+    }
+}
